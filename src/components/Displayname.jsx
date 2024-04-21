@@ -2,8 +2,8 @@ import React, { useState } from "react";
 
 function Displayname() {
   const [user, setUser] = useState({
-    firstName: "",
-    lastName: "",
+    first: "",
+    last: "",
   });
 
   const [fullName, setFullName] = useState("");
@@ -20,8 +20,9 @@ function Displayname() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const name = `${user.firstName} ${user.lastName}`;
-    setFullName(name);
+    console.log("user>>", user);
+    let username = `${user.first} ${user.last}`;
+    setFullName(username);
   };
 
   return (
@@ -29,25 +30,25 @@ function Displayname() {
       <form action="#">
         <h1>Full Name Display</h1>
 
-        <label htmlFor="firstName">
+        <label htmlFor="first">
           First Name:
           <input
             type="text"
-            id="firstName"
-            name="firstName"
-            value={user.firstName}
+            id="first"
+            name="first"
+            value={user.first}
             onChange={handleChange}
             required
           />
         </label>
         <br />
-        <label htmlFor="firstName">
+        <label htmlFor="last">
           Last Name:
           <input
             type="text"
-            id="lastName"
-            name="lastName"
-            value={user.lastName}
+            id="last"
+            name="last"
+            value={user.last}
             onChange={handleChange}
             required
           />
