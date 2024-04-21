@@ -27,7 +27,7 @@ function Displayname() {
   return (
     <>
       <form action="#">
-        <h1>First Name Display</h1>
+        <h1>Full Name Display</h1>
 
         <label htmlFor="firstName">
           First Name:
@@ -57,7 +57,7 @@ function Displayname() {
           Submit
         </button>
         <br />
-        <div>{fullName.length ? <span> Full Name : {fullName}</span> : ""}</div>
+        <span>Full Name: {fullName}</span>
       </form>
     </>
   );
