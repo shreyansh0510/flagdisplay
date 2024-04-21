@@ -11,6 +11,9 @@ function Counter() {
     setCount((prevCount) => prevCount - 1);
   };
 
+  console.log("count", typeof count);
+  console.log("count", typeof count);
+
   return (
     <>
       <div>Counter App</div>
