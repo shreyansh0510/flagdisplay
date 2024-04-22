@@ -7,8 +7,8 @@ function App() {
   return (
     <div className="app">
       {/* <Flags /> */}
-      {/* <Counter /> */}
-      <Displayname />
+      <Counter />
+      {/* <Displayname /> */}
     </div>
   );
 }
